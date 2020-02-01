@@ -1,0 +1,230 @@
+body {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.tableDerm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(table.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 93%;
+    height: 49.5vw;
+    padding: 3vw 2vw 5.2vw 8vw;
+    box-sizing: border-box;
+}
+
+.tableDerm .box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.tableDerm .box .p:first-of-type {
+    font-size: 1.25vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tableDerm .box_tittle:first-of-type {
+
+    text-align: left;
+}
+
+.tableDerm .box5 {
+    font-size: 0.94vw;
+    text-align: left;
+    align-items: flex-start;
+
+}
+
+.tableDerm .box_tittle {
+    font-size: 1.13vw;
+    text-align: left;
+}
+
+.tableDerm .tittle {
+    text-align: center;
+    width: 100%;
+    font-size: 1.25vw;
+    font-weight: 700;
+}
+
+.tableDerm .box2 {
+    width: 15%;
+}
+
+.tableDerm .box4 {
+    width: 13%;
+}
+
+.tableDerm .box5 .tittle {
+    padding: 0vw 0 0.8vw;
+}
+
+.tableDerm .box5 .p3 {
+    position: relative;
+}
+
+.box5 .p5 {
+    position: relative;
+    top: 0.2vw;
+}
+
+.tableDerm .box5 .p6 {
+    position: relative;
+    top: 0.2vw;
+}
+
+.tableDerm .box5 .p7 {
+    position: relative;
+    top: 0.3vw;
+}
+
+.tableDerm .box5 .p8 {
+    position: relative;
+    top: 0.4vw;
+}
+
+.tableDerm .box5 .p9 {
+    position: relative;
+    top: 0.5vw;
+}
+
+.mobileDerm {
+    display: none;
+}
+
+@media all and (max-width:768px) {
+
+    .mobileDerm {
+        display: flex;
+    }
+
+    .carousel {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tableDerm {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(table-4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 86%;
+        height: 104.5vw;
+        padding: 6.5vw 4.3vw 10.6vw 16vw;
+        box-sizing: border-box;
+    }
+
+    .carousel .carousel-item {
+        width: 120%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tableDerm .box_tittle,
+    .tableDerm .tittle {
+        font-size: 2.9vw;
+    }
+
+    .tableDerm .box5 {
+        font-size: 1.8vw;
+
+    }
+
+    .tableDerm .tittle {
+        padding: 0vw 0 0.3vw;
+    }
+
+    .tableDerm .box5 .p7 {
+        position: relative;
+        top: 0.6vw;
+    }
+
+    .tableDerm .box5 .p8 {
+        position: relative;
+        top: 0.7vw;
+    }
+
+    .tableDerm .box5 .p9 {
+        position: relative;
+        top: 0.6vw;
+    }
+
+    .carousel .indicators {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        bottom: 4%;
+        margin: 0;
+    }
+
+    .carousel .indicators .indicator-item.active {
+        background-color: black;
+    }
+
+    .oxidative,
+    .inflammatory,
+    .Skin {
+        width: 34vw;
+    }
+
+}
+
+@media all and (max-width:425px) {
+    .tableDerm {
+        width: 87%;
+        padding: 6.5vw 4.1vw 10.1vw 16vw;
+    }
+
+    .oxidative,
+    .inflammatory,
+    .Skin {
+        width: 33vw;
+    }
+
+    .tableDerm .box5 .p7 {
+        top: 0vw;
+    }
+
+    .tableDerm .box5 .p8 {
+        top: 0;
+    }
+
+    .tableDerm .box5 .p9 {
+        top: 0;
+    }
+}
+
+@media all and (max-width:414px) {
+    .tableDerm {
+        padding: 6.5vw 3.8vw 10.4vw 16vw;
+    }
+}
+
+
+@media all and (max-width:320px) {
+
+    .tableDerm {
+        padding: 6.5vw 3.8vw 10vw 16vw;
+    }
+}
